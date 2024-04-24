@@ -415,6 +415,48 @@ section{
 }
 /* CTA Section ends */
 
+/* FAQ Section starts */
+.wpfnl-faq-section-wrapper{
+    padding-top: 120px;
+    background-image: url(assets/faq-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+.wpfnl-faq-section-container{
+    text-align: center;
+}
+.wpfnl-faq-span{
+    color: #6E42D3;
+    text-align: center;
+    font-family: "Circular Std";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.wpfnl-section-header{
+    margin-top: 20px;
+    margin-bottom: 70px;
+    color: #111827;
+    font-family: "Circular Std";
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 58px;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+}
+.wpfnl-gradient-text{
+    background: linear-gradient(95deg, #6E42D3 5.71%, #AC77FD 29.82%, #DF52FF 61.09%, #EE8134 103.56%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* FAQ Section ends */
+
 
 /* Responsive styles */
 @media only screen and (max-width: 1399px) {

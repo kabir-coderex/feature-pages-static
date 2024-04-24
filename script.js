@@ -13,3 +13,13 @@ document.getElementById("wpfnl-closeModal").addEventListener("click", function (
   document.getElementById("wpfnl-openModal").focus();
 });
 
+
+// Accordion.js
+document.querySelectorAll(".wpfnl-accordion-item").forEach((item) => {
+    item.querySelector(".wpfnl-accordion-item-header").addEventListener("click", () => {
+      item.classList.toggle("open");
+    });
+  });
+
+
+
