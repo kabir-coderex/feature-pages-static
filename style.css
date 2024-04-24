@@ -67,6 +67,30 @@ section{
     border-color: #5B26C6;
 }
 
+.wpfnl-btn-full-round{
+    background: no-repeat;
+    border: 1px solid #6F42D4;
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    cursor: pointer;
+}
+
+.wpfnl-btn{
+    background: none;
+    border: 1px solid #6F42D4;
+    color: #FFF;
+    font-family: "Circular Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.3px;
+    padding: 18px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
 /* Hero Section Starts */
 .wpfnl-hero-section-wrapper{
     width: 100%;
@@ -356,6 +380,101 @@ section{
     background-repeat: no-repeat;
     background-position: top center;
 }
+.wpfnl-client-review-section-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 80px;
+}
+.wpfnl-client-review-section-header .wpfnl-section-header{
+    color: #fff;
+    margin: 0;
+}
+.wpfnl-client-review-section-header .wpfnl-button-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+.wpfnl-carousel-wrapper{
+    display: flex;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    padding: 0 8px 23px 0;
+    border-radius: 10px;
+    width: 100%;
+    gap: 20px;
+}
+.wpfnl-single-carousel {
+    border-radius: 24px;
+    padding: 40px;
+    min-width: 430px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.wpfnl-single-carousel:nth-child(3n+1),
+.slick-slide:nth-child(3n+1){
+    border: 1px solid rgba(139, 137, 253, 0.14);
+    background: radial-gradient(119.27% 117.84% at 78.61% 9.95%, rgba(236, 129, 63, 0.20) 0%, rgba(19, 21, 33, 0.00) 100%);
+    background-blend-mode: soft-light, normal;
+    box-shadow: 0px 16px 20px 0px rgba(18, 20, 32, 0.08), 0px 2px 2px 0px rgba(236, 129, 63, 0.25) inset;
+    border-radius: 24px;
+}
+
+.wpfnl-single-carousel:nth-child(3n+2),
+.slick-slide:nth-child(3n+2){
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: radial-gradient(119.27% 117.84% at 78.61% 9.95%, #6E42D3 0%, rgba(19, 21, 33, 0.00) 100%);
+    background-blend-mode: soft-light, normal;
+    box-shadow: 0px 16px 20px 0px rgba(18, 20, 32, 0.08), 0px 2px 2px 0px #6E42D3 inset;
+    border-radius: 24px;
+}
+
+
+.wpfnl-single-carousel:nth-child(3n+3),
+.slick-slide:nth-child(3n+3){
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: radial-gradient(119.27% 117.84% at 78.61% 9.95%, rgba(33, 109, 240, 0.44) 0%, rgba(19, 21, 33, 0.00) 100%);
+    background-blend-mode: soft-light, normal;
+    box-shadow: 0px 16px 20px 0px rgba(18, 20, 32, 0.08), 0px 2px 2px 0px rgba(33, 109, 240, 0.30) inset;
+    border-radius: 24px;
+}
+
+.wpfnl-single-ratting{
+    background: #00B67C;
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    align-items: center;
+    margin-right: 2px;
+    justify-content: center;
+}
+
+blockquote {
+    color: rgba(255, 255, 255, 0.85);
+    font-family: "Circular Std";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 450;
+    margin-top: 24px;
+    line-height: 30px;
+    margin-bottom: 33px;
+}
+
+p.wpfnl-author-name {
+    color: #F3F3F3;
+    font-family: "Circular Std";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -1px;
+}
+
 /* Clients Review section ends */
 
 /* CTA Section starts    */
@@ -509,7 +628,8 @@ section{
     .wpfnl-hero-section-wrapper .wpfnl-hero-section-container .wpfnl-hero-text-wrapper .wpfnl-hero-section-heading,
     .wpfnl-testing-section-header-wrapper .wpfnl-section-heading,
     .wpfnl-integration-section-container .wpfnl-profit-section-text-wrapper .wpfnl-section-heading,
-    .wpfnl-cta-text{
+    .wpfnl-cta-text,
+    .wpfnl-client-review-section-header .wpfnl-section-header{
         font-size: 36px;
         line-height: 46px;
         margin-bottom: 18px;
@@ -520,7 +640,9 @@ section{
         margin-bottom: 8px;
     }
     .wpfnl-section-text,
-    .wpfnl-impliment-section-cards-wrapper .wpfnl-impliment-single-card .wpfnl-impliment-single-card-text{
+    .wpfnl-impliment-section-cards-wrapper .wpfnl-impliment-single-card .wpfnl-impliment-single-card-text,
+    blockquote,
+    p.wpfnl-author-name{
         font-size: 14px;
         line-height: 24px;
         margin-bottom: 18px;
@@ -568,6 +690,19 @@ section{
         left: 4%;
         height: auto;
     }
+    
+    .wpfnl-clients-review-section-container{
+        padding-top: 50px;
+    }
+
+    .wpfnl-client-review-section-header{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .wpfnl-single-carousel{
+        min-width: 600px;
+    }
 
 }
 
@@ -593,5 +728,16 @@ section{
     }
     .wpfnl-impliment-section-cards-wrapper .wpfnl-impliment-single-card.wpfnl-impliment-card-3 figure{
         width: 90%;
+    }
+
+    .wpfnl-single-carousel{
+        min-width: 400px;
+        padding: 25px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .wpfnl-single-carousel{
+        min-width: 280px;
     }
 }

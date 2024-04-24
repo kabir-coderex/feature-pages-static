@@ -26,10 +26,7 @@
     opacity: 1;
     visibility: visible;
   }
-  
-  button:focus {
-    outline: 2px solid blue;
-  }
+
 #wpfnl-closeModal{
     border: none;
     position: absolute;
