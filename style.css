@@ -386,12 +386,15 @@ section{
 
 /* Clients Review section starts */
 .wpfnl-clients-review-section-wrapper{
-    background: url('assets/carousel-section-bg.png'), linear-gradient(180deg, #08020C 0%, #2C0C47 56.01%, #4D157C 100%);
+    background: linear-gradient(180deg, #08020C 0%, #2C0C47 56.01%, #4D157C 100%);
 }
 .wpfnl-clients-review-section-container{
     padding-top: 120px;
+    background: url(assets/carousel-section-bg.png);
     background-repeat: no-repeat;
     background-position: top center;
+    background-size: 70% 35%;
+    background-origin: padding-box;
 }
 .wpfnl-client-review-section-header{
     display: flex;
@@ -557,6 +560,7 @@ p.wpfnl-author-name {
     background: url(assets/faq-bg.png), linear-gradient(180deg, rgba(226, 217, 255, 0.48) 0%, #FFF 87.1%);
     background-repeat: no-repeat;
     background-position: top center;
+    background-size: cover;
 }
 .wpfnl-faq-section-container{
     text-align: center;
@@ -605,7 +609,21 @@ p.wpfnl-author-name {
   .wpfnl-container{
         max-width: 960px;
   }
-  .wpfnl-profit-section-text-wrapper{
+  .wpfnl-profit-section-text-wrapper,
+  .wpfnl-integration-section-container .wpfnl-profit-section-text-wrapper{
+    width: 80%;
+  }
+  .wpfnl-profit-cards-wrapper .wpfnl-single-profit-card.wpfnl-profit-card-1{
+    padding: 50px 60px;
+  }
+  .wpfnl-profit-cards-wrapper .wpfnl-single-profit-card img{
+    max-height: 250px;
+  }
+  .wpfnl-testing-section-header-wrapper,
+  .wpfnl-container.wpfnl-faq-section-container .wpfnl-accordion{
+    width: 90%;
+  }
+  .wpfnl-testing-section-header-wrapper .wpfnl-section-text{
     width: 80%;
   }
   .wpfnl-integration-cards-wrapper{
@@ -645,16 +663,13 @@ p.wpfnl-author-name {
     .wpfnl-testing-section-header-wrapper .wpfnl-section-heading,
     .wpfnl-integration-section-container .wpfnl-profit-section-text-wrapper .wpfnl-section-heading,
     .wpfnl-cta-text,
-    .wpfnl-client-review-section-header .wpfnl-section-header{
+    .wpfnl-client-review-section-header .wpfnl-section-header,
+    .wpfnl-profit-section-text-wrapper .wpfnl-section-heading{
         font-size: 36px;
         line-height: 46px;
         margin-bottom: 18px;
     }
-    .wpfnl-profit-section-text-wrapper .wpfnl-section-heading{
-        font-size: 24px;
-        line-height: 36px;
-        margin-bottom: 8px;
-    }
+    
     .wpfnl-section-text,
     .wpfnl-impliment-section-cards-wrapper .wpfnl-impliment-single-card .wpfnl-impliment-single-card-text,
     blockquote,
@@ -699,7 +714,7 @@ p.wpfnl-author-name {
     }
     
     .wpfnl-cta-section{
-        width: 100%;
+        width: 50%;
         gap: 25px;
     }
     .wpfnl-cta-section:before{
@@ -719,7 +734,10 @@ p.wpfnl-author-name {
     .wpfnl-single-carousel{
         min-width: 600px;
     }
-
+    .wpfnl-impliment-section-container .wpfnl-profit-section-text-wrapper .wpfnl-section-text{
+        width: 75%;
+        margin: auto;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -749,6 +767,17 @@ p.wpfnl-author-name {
     .wpfnl-single-carousel{
         min-width: 400px;
         padding: 25px;
+    }
+    .wpfnl-cta-section,
+    .wpfnl-container.wpfnl-faq-section-container .wpfnl-accordion,
+    .wpfnl-profit-section-text-wrapper, 
+    .wpfnl-integration-section-container .wpfnl-profit-section-text-wrapper,
+    .wpfnl-testing-section-header-wrapper .wpfnl-section-text,
+    .wpfnl-impliment-section-container .wpfnl-profit-section-text-wrapper .wpfnl-section-text,
+    .wpfnl-integration-cards-wrapper .wpfnl-integration-single-card .wpfnl-integration-header,
+    .wpfnl-integration-cards-wrapper .wpfnl-integration-single-card:nth-child(2) .wpfnl-integration-header, 
+    .wpfnl-integration-cards-wrapper .wpfnl-integration-single-card:nth-child(5) .wpfnl-integration-header{
+        width: 100%;
     }
 }
 
