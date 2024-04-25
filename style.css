@@ -177,9 +177,11 @@ section{
     margin: 0 auto;
 }
 .wpfnl-profit-cards-wrapper .wpfnl-single-profit-card.wpfnl-profit-card-1{
-    background:linear-gradient(180deg, #F5E1FE 0%, #FFF 100%);
+    background: url(assets/ab-testing-card-bg.png), linear-gradient(180deg, #F5E1FE 0%, #FFF 100%);
     padding: 50px 95px;
     border: 1px solid #DECEE6;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .wpfnl-profit-cards-wrapper .wpfnl-single-profit-card.wpfnl-profit-card-2{
     padding: 50px 20px;
@@ -709,7 +711,7 @@ p.wpfnl-author-name {
         padding-top: 50px;
     }
     .wpfnl-impliment-section-cards-wrapper{
-        margin-top: 50px;
+        margin-top: 30px;
         grid-template-columns: 1fr;
     }
     .wpfnl-impliment-section-cards-wrapper .wpfnl-impliment-single-card .wpfnl-impliment-single-card-header{
@@ -793,7 +795,7 @@ p.wpfnl-author-name {
         padding: 25px;
     }
     .wpfnl-impliment-section-cards-wrapper .wpfnl-impliment-single-card.wpfnl-impliment-card-3{
-        min-height: 340px;
+        min-height: 360px;
         padding: 25px 0 0 25px;
     }
     .wpfnl-impliment-section-cards-wrapper .wpfnl-impliment-single-card.wpfnl-impliment-card-3 figure{
@@ -831,5 +833,9 @@ p.wpfnl-author-name {
 
     .wpfnl-clients-review-section-container{
         background-size: 100% 15%;
+    }
+
+    .wpfnl-impliment-section-cards-wrapper .wpfnl-impliment-single-card.wpfnl-impliment-card-3 figure{
+        width: 100%;
     }
 }
