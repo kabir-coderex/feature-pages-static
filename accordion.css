@@ -103,11 +103,12 @@ p {
     }
     .wpfnl-accordion .wpfnl-accordion-item .wpfnl-accordion-item-header .wpfnl-accordion-item-header-title{
         font-size: 16px;
-        line-height: 1.5;
+        line-height: 1.4;
     }
 
     .wpfnl-accordion .wpfnl-accordion-item .wpfnl-accordion-item-description-wrapper .wpfnl-accordion-item-description p{
         font-size: 14px;
-        line-height: 1.8
+        line-height: 1.8;
+        padding-top: 0;
     }
 }
