@@ -21,7 +21,7 @@ document.querySelectorAll(".wpfnl-accordion-item").forEach((item) => {
     });
 });
 
-// Carousle.js
+// Carousle.js Starts
 
 function getScrollAmount() {
     const width = window.innerWidth;
@@ -35,6 +35,8 @@ function getScrollAmount() {
         return 450; 
     }
 }
+
+
 
 const carrouselWrapper = document.querySelector('.wpfnl-clients-review-section-container .wpfnl-carousel-wrapper')
 document.querySelector('.wpfnl-client-review-section-header .wpfnl-button-wrapper .wpfnl-btn').addEventListener('click', ()=>{
@@ -80,5 +82,28 @@ carrouselWrapper.addEventListener('mousemove', mouseMove);
 carrouselWrapper.addEventListener('mouseleave', mouseLeave);
 carrouselWrapper.addEventListener('mouseup', mouseUp);
 carrouselWrapper.addEventListener('mousedown', mouseIsDown);
+
+window.addEventListener("load", () => {
+    // Define a more reasonable interval for visual smoothness and performance
+    const intervalDuration = 5000; // Scroll every 3 seconds
+    const scrollAmount = getScrollAmount(); // Get scroll amount once to avoid recalculating
+
+    const interval = setInterval(() => {
+        console.log('so far so good');
+
+        if (carrouselWrapper) {
+            // Check if we've reached the end of the carousel
+            if (carrouselWrapper.scrollLeft + carrouselWrapper.clientWidth >= carrouselWrapper.scrollWidth) {
+                carrouselWrapper.scrollLeft = 0; // Reset to start or you could clear the interval to stop
+                // clearInterval(interval); // Uncomment to stop scrolling at the end
+            } else {
+                carrouselWrapper.scrollLeft += scrollAmount;
+            }
+        }
+    }, intervalDuration);
+});
+
+// Carousle.js Ends
+
 
 
