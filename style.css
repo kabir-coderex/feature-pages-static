@@ -127,6 +127,10 @@ section{
     margin-bottom: 30px;
 }
 
+.wpfnl-hero-section-wrapper .wpfnl-hero-section-container .wpfnl-hero-text-wrapper .wpfnl-section-text{
+    width: 80%;
+}
+
 /* Hero Section Ends */
 /* Profit Section Starts */
 .wpfnl-profit-section-text-wrapper{
@@ -170,10 +174,8 @@ section{
     margin: 0 auto;
 }
 .wpfnl-profit-cards-wrapper .wpfnl-single-profit-card.wpfnl-profit-card-1{
-    background: url('assets/profit-card-bg.png'), linear-gradient(180deg, #F5E1FE 0%, #FFF 100%);
-    background-size: cover;
-    background-position: center;
-    padding: 50px 100px;
+    background:linear-gradient(180deg, #F5E1FE 0%, #FFF 100%);
+    padding: 50px 95px;
     border: 1px solid #DECEE6;
 }
 .wpfnl-profit-cards-wrapper .wpfnl-single-profit-card.wpfnl-profit-card-2{
@@ -209,6 +211,11 @@ section{
     -webkit-text-fill-color: transparent;
     margin: 0;
     margin-bottom: 16px;
+}
+
+.wpfnl-testing-section-header-wrapper .wpfnl-section-text{
+    width: 60%;
+    margin: auto;
 }
 
 .wpfnl-testing-section-header-wrapper .wpfnl-button-wrapper{
@@ -359,6 +366,12 @@ section{
     text-align: left;
     margin-top: 30px;
     margin-bottom: 12px;
+    width: 65%;
+}
+
+.wpfnl-integration-cards-wrapper .wpfnl-integration-single-card:nth-child(2) .wpfnl-integration-header,
+.wpfnl-integration-cards-wrapper .wpfnl-integration-single-card:nth-child(5) .wpfnl-integration-header{
+    width: 80%;
 }
 
 .wpfnl-integration-cards-wrapper .wpfnl-integration-single-card .wpfnl-integration-text{
@@ -414,6 +427,10 @@ section{
     min-width: 430px;
     cursor: pointer;
     user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .wpfnl-single-carousel:nth-child(3n+1),
@@ -492,7 +509,7 @@ p.wpfnl-author-name {
     align-items: center;
     justify-content: center;
     gap: 45px;
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
 }
 
@@ -537,9 +554,8 @@ p.wpfnl-author-name {
 /* FAQ Section starts */
 .wpfnl-faq-section-wrapper{
     padding-top: 120px;
-    background-image: url(assets/faq-bg.png);
+    background: url(assets/faq-bg.png), linear-gradient(180deg, rgba(226, 217, 255, 0.48) 0%, #FFF 87.1%);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: top center;
 }
 .wpfnl-faq-section-container{
