@@ -568,6 +568,7 @@ p.wpfnl-author-name {
     background: url(assets/faq-bg.png), linear-gradient(180deg, rgba(226, 217, 255, 0.48) 0%, #FFF 87.1%);
     background-repeat: no-repeat;
     background-position: top center;
+    background-size: 100% auto;
 }
 .wpfnl-faq-section-container{
     text-align: center;
@@ -791,6 +792,9 @@ p.wpfnl-author-name {
     }
     .wpfnl-impliment-section-cards-wrapper .wpfnl-impliment-single-card{
         padding-bottom: 0;
+    }
+    .wpfnl-faq-section-wrapper{
+        background-size: cover;
     }
 }
 
