@@ -91,10 +91,13 @@ section{
     cursor: pointer;
 }
 
+.mobile-device{
+    display: none;
+}
+
 /* Hero Section Starts */
 .wpfnl-hero-section-wrapper{
     width: 100%;
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -249,6 +252,7 @@ section{
     border-radius: 24px;
     border: 1px solid #DECEE6;
     padding: 40px;
+    padding-bottom: 0;
 }
 
 .wpfnl-impliment-section-cards-wrapper .wpfnl-impliment-single-card .wpfnl-impliment-single-card-header {
@@ -269,6 +273,7 @@ section{
     font-weight: 400;
     line-height: 26px;
     margin-bottom: 22px;
+    width: 80%;
 }
 
 .wpfnl-impliment-section-cards-wrapper .wpfnl-impliment-single-card.wpfnl-impliment-card-1{
@@ -284,7 +289,7 @@ section{
 }
 
 .wpfnl-impliment-section-cards-wrapper .wpfnl-impliment-single-card.wpfnl-impliment-card-4{
-    background: url('assets/profit-card-bg.png') ,linear-gradient(180deg, #F5E1FE 0%, #FFF 100%);
+    background: url('assets/accurate-data-png.png') ,linear-gradient(180deg, #F5E1FE 0%, #FFF 100%);
     padding-bottom: 0px;
     
 }
@@ -393,7 +398,7 @@ section{
     background: url(assets/carousel-section-bg.png);
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 70% 35%;
+    background-size: 70% 30%;
     background-origin: padding-box;
 }
 .wpfnl-client-review-section-header{
@@ -402,6 +407,7 @@ section{
     justify-content: space-between;
     gap: 10px;
     margin-bottom: 80px;
+    padding-right: 20px;
 }
 .wpfnl-client-review-section-header .wpfnl-section-header{
     color: #fff;
@@ -465,7 +471,7 @@ section{
 }
 
 .wpfnl-single-ratting{
-    background: #00B67C;
+    background: #ee8134;
     display: inline-flex;
     width: 18px;
     height: 18px;
@@ -560,7 +566,6 @@ p.wpfnl-author-name {
     background: url(assets/faq-bg.png), linear-gradient(180deg, rgba(226, 217, 255, 0.48) 0%, #FFF 87.1%);
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: cover;
 }
 .wpfnl-faq-section-container{
     text-align: center;
@@ -659,14 +664,21 @@ p.wpfnl-author-name {
         width: 80%;
         margin: auto;
     }
+    .wpfnl-container.wpfnl-hero-section-container{
+        text-align: center;
+    }
+    .wpfnl-hero-section-wrapper .wpfnl-hero-section-container .wpfnl-hero-text-wrapper .wpfnl-section-text{
+        margin: auto;
+        margin-bottom: 18px;
+    }
     .wpfnl-hero-section-wrapper .wpfnl-hero-section-container .wpfnl-hero-text-wrapper .wpfnl-hero-section-heading,
     .wpfnl-testing-section-header-wrapper .wpfnl-section-heading,
     .wpfnl-integration-section-container .wpfnl-profit-section-text-wrapper .wpfnl-section-heading,
     .wpfnl-cta-text,
     .wpfnl-client-review-section-header .wpfnl-section-header,
     .wpfnl-profit-section-text-wrapper .wpfnl-section-heading{
-        font-size: 36px;
-        line-height: 46px;
+        font-size: 34px;
+        line-height: 40px;
         margin-bottom: 18px;
     }
     
@@ -729,6 +741,19 @@ p.wpfnl-author-name {
     .wpfnl-client-review-section-header{
         flex-direction: column;
         margin-bottom: 30px;
+        gap: 0;
+        padding-right: 0;
+    }
+
+    .wpfnl-client-review-section-header .wpfnl-button-wrapper{
+        display: none;
+    }
+
+    .wpfnl-button-wrapper.mobile-device{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
     }
 
     .wpfnl-single-carousel{
@@ -737,6 +762,17 @@ p.wpfnl-author-name {
     .wpfnl-impliment-section-container .wpfnl-profit-section-text-wrapper .wpfnl-section-text{
         width: 75%;
         margin: auto;
+    }
+
+    .wpfnl-integration-cards-wrapper .wpfnl-integration-single-card .wpfnl-integration-header{
+        margin-top: 12px;
+    }
+
+    .wpfnl-clients-review-section-container{
+        background-size: 100% 25%;
+    }
+    .wpfnl-client-review-section-header .wpfnl-section-header{
+        text-align: center;
     }
 }
 
@@ -779,10 +815,21 @@ p.wpfnl-author-name {
     .wpfnl-integration-cards-wrapper .wpfnl-integration-single-card:nth-child(5) .wpfnl-integration-header{
         width: 100%;
     }
+
+    .wpfnl-clients-review-section-container{
+        background-size: 100% 20%;
+    }
 }
 
 @media only screen and (max-width: 575px) {
     .wpfnl-single-carousel{
         min-width: 280px;
+    }
+    .wpfnl-hero-animation-wrapper{
+        width: 100%;
+    }
+
+    .wpfnl-clients-review-section-container{
+        background-size: 100% 15%;
     }
 }
